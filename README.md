@@ -1,4 +1,4 @@
-Project present different approaches to custom CSV file data conversion using SpringBatch.
+Project presents different approaches to custom CSV file data conversion using SpringBatch.
 
 Branches:
 - main, all the code in one place, check comments in JobConfiguration class
