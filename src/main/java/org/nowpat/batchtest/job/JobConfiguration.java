@@ -72,7 +72,7 @@ public class JobConfiguration {
 //                .fieldSetMapper(personFieldSetMapper)
 // ------------------------
 
-// standard field set mapper using conversion service with extended list of converters
+// standard field set mapper using default conversion service with extended list of converters
                 .fieldSetMapper(customConverterPersonMapper)
 // -----------------------------------------------------------------------------------
 
