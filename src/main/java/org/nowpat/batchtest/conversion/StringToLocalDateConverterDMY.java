@@ -6,7 +6,7 @@ import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StringToLocalDateConverterDayFirst implements Converter<String, LocalDate> {
+public class StringToLocalDateConverterDMY implements Converter<String, LocalDate> {
 
     @Override
     public LocalDate convert(String source) {
