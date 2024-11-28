@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomConverterPersonMapper extends BeanWrapperFieldSetMapper<Person> {
 
-    public CustomConverterPersonMapper(StringToLocalDateConverterDayFirst stringToLocalDateConverterDayFirst) {
+    public CustomConverterPersonMapper(StringToLocalDateConverterDMY stringToLocalDateConverterDMY) {
         super();
         DefaultConversionService conversionService = new DefaultConversionService();
-        conversionService.addConverter(stringToLocalDateConverterDayFirst);
+        conversionService.addConverter(stringToLocalDateConverterDMY);
         this.setConversionService(conversionService);
         this.setTargetType(Person.class);
     }
