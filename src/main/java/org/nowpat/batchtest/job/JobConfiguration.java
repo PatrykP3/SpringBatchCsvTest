@@ -1,7 +1,5 @@
 package org.nowpat.batchtest.job;
 
-import java.time.Instant;
-import java.time.ZoneId;
 import lombok.AllArgsConstructor;
 import org.nowpat.batchtest.conversion.StringToLocalDateConverterDMY;
 import org.nowpat.batchtest.model.Person;
