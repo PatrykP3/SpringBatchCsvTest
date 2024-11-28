@@ -9,19 +9,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatePropertyEditor extends PropertyEditorSupport {
 
-    private static DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+    private static DateTimeFormatter DMY_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
     @Override
     public void setAsText(String text) throws IllegalArgumentException {
         try {
-            setValue(LocalDate.parse(text, FORMATTER));
+            setValue(LocalDate.parse(text, DMY_FORMATTER));
         } catch (ParseException e) {
             throw new IllegalArgumentException("Could not parse date", e);
         }
-    }
-
-    @Override
-    public String getAsText() {
-        return FORMATTER.format((LocalDate) getValue());
     }
 }

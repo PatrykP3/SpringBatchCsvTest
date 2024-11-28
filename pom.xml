@@ -8,25 +8,22 @@
 		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>org.nowpat</groupId>
 	<artifactId>batchtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>batchtest</name>
 	<description>Demo project for Spring Boot</description>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-batch</artifactId>
 			<version>3.3.5</version>
-<!--			<exclusions>-->
-<!--				<exclusion>-->
-<!--					<artifactId>logback-classic</artifactId>-->
-<!--					<groupId>ch.qos.logback</groupId>-->
-<!--				</exclusion>-->
-<!--			</exclusions>-->
 		</dependency>
 
 		<dependency>
